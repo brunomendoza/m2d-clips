@@ -2,11 +2,11 @@
 (defrule duck
   (animal-is duck)
 =>
-  (assert (soud-is quack))
+  (assert (sound-is quack)))
 
 (assert (animal-is duck))
-(animal (animal-is lion))
-(animal (animal-is wolf))
+(assert (animal-is lion))
+(assert (animal-is wolf))
 
 ; Show agenda
 (agenda)
@@ -14,5 +14,10 @@
 ; Show facts
 (facts)
 
+; Show rule names
+(rules)
+
+; Show rule definition
+(ppdefrule duck)
 
 ; (run)
